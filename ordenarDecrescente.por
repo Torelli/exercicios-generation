@@ -13,7 +13,7 @@ programa {
 
     para(inteiro j = 0; j < 10; j++) {
       para(inteiro k = 0; k < 10; k ++) {
-        se(tp.cadeia_para_inteiro(numeros[k], 10) > tp.cadeia_para_inteiro(numeros[j], 10)) {
+        se(tp.cadeia_para_inteiro(numeros[k], 10) < tp.cadeia_para_inteiro(numeros[j], 10)) {
           reserva = tp.cadeia_para_inteiro(numeros[j], 10)
           numeros[j] = numeros[k]
           numeros[k] = tp.inteiro_para_cadeia(reserva, 10)
